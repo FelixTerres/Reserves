@@ -1,0 +1,106 @@
+
+html, body {
+    font-family: "Bangers", system-ui;
+    background: rgb(184, 204, 255);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.titol {
+    display: flex;
+    font-family: "Bangers", system-ui;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 25px;
+    font-size: 50px;
+    color: rgb(247, 247, 247); 
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    align-items: center;
+}
+
+.seccio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+    flex-wrap: wrap; 
+}
+
+.columna1 {
+    flex: 1.5;
+    min-width: 800px; 
+    text-align: center;
+}
+
+.columna2 {
+    flex: 0.5;
+    min-width:200px;
+    text-align: center;
+}
+
+.img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+.button {
+    display: block;
+    width: 200px;
+    margin: 15px auto;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffcb05;
+    color: #034de2;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+
+}
+
+.button:hover {
+    background-color: #ffcb05;
+    transform: scale(1.05);
+}
+
+
+.seccio2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+    flex-wrap: wrap;
+    background-color: #cfbe77;
+    color: #00060e;
+    background: rgb(184, 204, 255);
+}
+
+
+.button2 {
+    display: block;
+    width: 500px;
+    margin: 15px auto;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffcb05;
+    color: #034de2;
+    font-weight: bold;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+
+}
+
+.button2:hover {
+    background-color: #ffc107;
+    transform: scale(1.05);
+}
