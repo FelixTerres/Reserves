@@ -31,7 +31,7 @@ con.append(titol)
 con.append(imatge)
 con.append(descripcio)
 
-lista.append(con) 
+
 
 
 // const ButtonForm = document.getElementById("add-button")
@@ -51,7 +51,11 @@ addButtonEl.addEventListener("click", function(){
         habitacions: document.getElementById("habitacions").value,
         persones: document.getElementById("persones").value,
         pensio: document.getElementById("pensio").value,
-        altres: document.getElementById("altres").value
+        altres: document.getElementById("altres").value,
+        hotel: nom,
+        imatge: foto,
+        desc: desc
+
     }
 
     push(itemsInDB,formulariH)
