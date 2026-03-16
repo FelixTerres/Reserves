@@ -43,7 +43,7 @@ document.getElementById("Tornar").addEventListener("click", function(){
 
 addButtonEl.addEventListener("click", function(){
     let formulariH = {
-        nom: document.getElementById("nom").value,
+        nombre: document.getElementById("nombre").value,
         cognoms: document.getElementById("cognoms").value,
         dni: document.getElementById("dni").value,
         dataE: document.getElementById("dataE").value,
@@ -64,7 +64,7 @@ addButtonEl.addEventListener("click", function(){
 })
 
 function clearInput(){
-    document.getElementById("nom").value = ""
+    document.getElementById("nombre").value = ""
     document.getElementById("cognoms").value = ""
     document.getElementById("dni").value = ""
     document.getElementById("dataE").value = ""
