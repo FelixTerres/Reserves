@@ -47,7 +47,9 @@ addButtonEl.addEventListener("click", function(){
         cognoms: document.getElementById("cognoms").value,
         dni: document.getElementById("dni").value,
         dataE: document.getElementById("dataE").value,
+        horaE: document.getElementById("horaE").value,
         dataS: document.getElementById("dataS").value,
+        horaS: document.getElementById("horaS").value,
         habitacions: document.getElementById("habitacions").value,
         persones: document.getElementById("persones").value,
         pensio: document.getElementById("pensio").value,
@@ -68,7 +70,9 @@ function clearInput(){
     document.getElementById("cognoms").value = ""
     document.getElementById("dni").value = ""
     document.getElementById("dataE").value = ""
+    document.getElementById("horaE").value = ""
     document.getElementById("dataS").value = ""
+    document.getElementById("horaS").value = ""
     document.getElementById("habitacions").value = ""
     document.getElementById("persones").value = ""
     document.getElementById("pensio").value = ""

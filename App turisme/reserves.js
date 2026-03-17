@@ -41,10 +41,12 @@ document.getElementById("Tornar").addEventListener("click", function () {
 cercar.addEventListener("click", function () {
 
     resultsDNIHotel(con.value);
+    resultsDNIRest(con.value);
+    resultsDNIActv(con.value);
 })
 
 
-function addElement(e,dni){
+function addElementH(e,dni){
     
     if(e[1].dni == dni){
 
@@ -113,7 +115,7 @@ function addElement(e,dni){
 }
 
 
-function addElement(e,dni){
+function addElementL(e,dni){
     
     if(e[1].dni == dni){
 
@@ -141,20 +143,14 @@ function addElement(e,dni){
         let dni = document.createElement("h2")
         dni.innerHTML = "DNI: " + e[1].dni
 
-        let dataE = document.createElement("h3")
-        dataE.innerHTML = "Data d'entrada: " + e[1].dataE
-        
-        let dataS = document.createElement("h3")
-        dataS.innerHTML = "Data de sortida: " + e[1].dataS
+        let data = document.createElement("h3")
+        data.innerHTML = "Data de reserva: " + e[1].data
 
-        let habitacions = document.createElement("h3")
-        habitacions.innerHTML = "Nº d'habitacions: " + e[1].habitacions
+        let telefon = document.createElement("h3")
+        telefon.innerHTML = "Nº de telèfon: " + e[1].habitacions
 
         let persones = document.createElement("h3")
         persones.innerHTML = "Nº de persones: " + e[1].persones
-
-        let pensio = document.createElement("h3")
-        pensio.innerHTML = "Tipus de pensió: " + e[1].pensio
 
         let altres = document.createElement("h3")
         altres.innerHTML = "Altra informació a tenir en compte: " + e[1].altres
@@ -168,14 +164,68 @@ function addElement(e,dni){
         contL.append(nombre);
         contL.append(cognoms);
         contL.append(dni);
-        contL.append(dataE);
-        contL.append(dataS);
-        contL.append(habitacions);
+        contL.append(data);
+        contL.append(telefon);
         contL.append(persones);
-        contL.append(pensio);
         contL.append(altres);
 
         listaL.append(contL)
+
+
+    }
+}
+
+function addElementA(e,dni){
+    
+    if(e[1].dni == dni){
+
+        let contA = document.createElement("div")
+        contA.classList += "activitat"
+        
+        let titol = document.createElement("h1")
+        titol.innerHTML = e[1].hotel
+
+        let imatge = document.createElement("img")
+        imatge.src = e[1].imatge
+
+        let desc = document.createElement("p")
+        desc.innerHTML = e[1].desc;
+
+        
+
+
+        let  nombre = document.createElement("h2")
+        nombre.innerHTML = "Nom: " + e[1].nombre
+
+        let cognoms = document.createElement("h2")
+        cognoms.innerHTML = "Cognoms: " + e[1].cognoms
+
+        let dni = document.createElement("h2")
+        dni.innerHTML = "DNI: " + e[1].dni
+        
+        let dataA = document.createElement("h3")
+        dataA.innerHTML = "Data de sortida: " + e[1].dataA
+
+        let persones = document.createElement("h3")
+        persones.innerHTML = "Nº de persones: " + e[1].persones
+
+        let altres = document.createElement("h3")
+        altres.innerHTML = "Altra informació a tenir en compte: " + e[1].altres
+
+
+
+        contA.append(titol);
+        contA.append(imatge);
+        contA.append(desc);
+
+        contA.append(nombre);
+        contA.append(cognoms);
+        contA.append(dni);
+        contA.append(dataA);
+        contA.append(persones);
+        contA.append(altres);
+
+        listaA.append(contA)
 
 
     }
@@ -188,7 +238,7 @@ function resultsDNIHotel(dni){
             let resultats = Object.entries(snapshot.val())
             clearListH();
             for(let i=0; i<resultats.length; i++){
-                addElement(resultats[i],dni);
+                addElementH(resultats[i],dni);
             }
         }
     })
@@ -197,26 +247,26 @@ function resultsDNIHotel(dni){
 
 
 
-function resultsDNIHotel(dni){
+function resultsDNIRest(dni){
     onValue(restaurants, function(snapshot){
         if(snapshot.exists()){
             let resultats = Object.entries(snapshot.val())
             clearListL();
             for(let i=0; i<resultats.length; i++){
-                addElement(resultats[i],dni);
+                addElementL(resultats[i],dni);
             }
         }
     })
     
 }
 
-function resultsDNIHotel(dni){
+function resultsDNIActv(dni){
     onValue(activitats, function(snapshot){
         if(snapshot.exists()){
             let resultats = Object.entries(snapshot.val())
             clearListA();
             for(let i=0; i<resultats.length; i++){
-                addElement(resultats[i],dni);
+                addElementA(resultats[i],dni);
             }
         }
     })
