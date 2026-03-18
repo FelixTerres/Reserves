@@ -1,0 +1,71 @@
+html, body {
+    font-family: "Bangers", system-ui;
+    background: rgb(184, 204, 255);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    color: black;
+}
+
+.titol {
+    display: flex;
+    font-family: "Bangers", system-ui;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 25px;
+    font-size: 50px;
+    color: rgb(247, 247, 247); 
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    align-items: center;
+}
+
+.rest {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px auto;
+    padding: 40px;
+    font-size: 30px;
+    flex-wrap: wrap; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+.rest h1{
+    font-family: "Bangers", system-ui;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 25px;
+    font-size: 50px;
+    align-items: center;
+
+}
+
+.rest img{
+    display: block;
+    width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+}
+
+.button {
+    display: block;
+    width: 200px;
+    margin: 15px auto;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffcb05;
+    color: #034de2;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+
+}
+
+.button:hover {
+    background-color: #ffcb05;
+    transform: scale(1.05);
+}

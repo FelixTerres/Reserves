@@ -1,0 +1,68 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Share Tech", sans-serif;
+    background: linear-gradient(135deg, #f1c87c, #7e97ce);
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    margin: 40px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.35);
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    box-shadow: var(--shadow-soft);
+}
+
+input {
+    color: var(--text-dark);
+    background-color: var(--secondary);
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin: 10px 0;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(54, 28, 3, 0.6);
+}
+
+input:hover,
+input:focus {
+    background-color: var(--secondary-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-hover);
+    outline: none;
+}
+
+button {
+    color: #ecd2b9;
+    background: linear-gradient(135deg, var(--primary), #a32a05);
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-top: 5px;
+    box-shadow: var(--shadow-soft);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, var(--primary-hover), #ff9a3c);
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: var(--shadow-hover);
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.2);
+}
