@@ -91,20 +91,7 @@ onValue(itemsInDB, function(snapshot){
 
 
 
-/*
-INDEX WELCOME:
 
-<div id="welcome-modal" class="modal-overlay">
-    <div class="modal">
-        <h2>🛒 Benvingut/da!</h2>
-        <p>
-            Benvingut a <strong>Turisme a Menorca</strong><br>
-            la teva app de restauració i informació de Menorca <br><br>
-            Creat per<br>
-            <strong>Hugo Coll Galmés i Félix Terrés Carreras</strong>
-        </p>
-        <button id="close-modal">Comencem!</button>
-    </div>
-</div>
 
-*/
+
+

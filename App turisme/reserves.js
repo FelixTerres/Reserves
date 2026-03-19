@@ -15,8 +15,8 @@ const appSettings = {
 const app = initializeApp(appSettings);
 const database = getDatabase(app);
 const hotels = ref(database, "reservaHotel")
-const restaurants = ref(database, "reservaRest")
-const activitats = ref(database, "reservaActv")
+const restaurants = ref(database, "reservaRestaurant")
+const activitats = ref(database, "reservaActivitat")
 let listaH = document.getElementById("R")
 let listaL = document.getElementById("L")
 let listaA = document.getElementById("C")
@@ -123,7 +123,7 @@ function addElementL(e,dni){
         contL.classList += "restaurant"
         
         let titol = document.createElement("h1")
-        titol.innerHTML = e[1].hotel
+        titol.innerHTML = e[1].restaurant
 
         let imatge = document.createElement("img")
         imatge.src = e[1].imatge
@@ -183,7 +183,7 @@ function addElementA(e,dni){
         contA.classList += "activitat"
         
         let titol = document.createElement("h1")
-        titol.innerHTML = e[1].hotel
+        titol.innerHTML = e[1].activitat
 
         let imatge = document.createElement("img")
         imatge.src = e[1].imatge

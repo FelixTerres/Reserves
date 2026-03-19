@@ -49,7 +49,10 @@ addButtonEl.addEventListener("click", function(){
         dataA: document.getElementById("dataA").value,
         hora: document.getElementById("hora").value,
         persones: document.getElementById("persones").value,
-        altres: document.getElementById("altres").value
+        altres: document.getElementById("altres").value,
+        activitat: nom,
+        imatge: foto,
+        desc: desc
     }
 
     push(itemsInDB,formulariA)

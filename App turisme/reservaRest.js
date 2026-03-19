@@ -50,7 +50,10 @@ addButtonEl.addEventListener("click", function(){
         hora: document.getElementById("hora").value,
         telefon: document.getElementById("telefon").value,
         persones: document.getElementById("persones").value,
-        altres: document.getElementById("altres").value
+        altres: document.getElementById("altres").value,
+        restaurant: nom,
+        imatge: foto,
+        desc: desc
     }
 
     push(itemsInDB,formulariR)

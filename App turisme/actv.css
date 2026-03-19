@@ -14,7 +14,7 @@ html, body {
     margin: 50px auto;
     padding: 25px;
     font-size: 50px;
-    color: rgb(247, 247, 247); 
+    color: #0707f3; 
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.7);
     align-items: center;
@@ -30,6 +30,8 @@ html, body {
     flex-wrap: wrap; 
     font-size: 30px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    text-align: center;
+
 }
 
 .actv h1{
@@ -39,6 +41,8 @@ html, body {
     padding: 25px;
     font-size: 50px;
     align-items: center;
+    text-align: center;
+
 
 }
 
@@ -47,7 +51,8 @@ html, body {
     width: 500px;
     border-radius: 12px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.7);
-    align-items: center;
+    margin: auto;
+
 }
 
 .button {

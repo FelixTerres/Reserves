@@ -14,11 +14,57 @@ html, body {
     margin: 50px auto;
     padding: 25px;
     font-size: 50px;
-    color: rgb(247, 247, 247); 
+    color: #0707f3; 
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.7);
     align-items: center;
 }
+
+
+.columna1 {
+    flex: 1;
+    min-width: 800px; 
+    text-align: center;
+}
+
+
+.columna2 {
+    flex: 1;
+    min-width:200px;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    margin: 50px auto;
+    font-size: 30px;
+    padding: 40px;
+    flex-wrap: wrap; 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    text-align: center;
+    
+} 
+
+
+.columna2 img {
+    display: block;
+    width: 500px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    margin: auto;
+}
+
+
+.columna2 h1{
+    font-family: "Bangers", system-ui;
+    flex-direction: column;
+    margin: 50px auto;
+    padding: 25px;
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+}
+
 
 .button {
     display: block;

@@ -1,10 +1,10 @@
-
 html, body {
     font-family: "Bangers", system-ui;
     background: rgb(184, 204, 255);
     margin: 0;
     padding: 0;
     height: 100%;
+
 }
 
 .titol {
@@ -14,7 +14,7 @@ html, body {
     margin: 50px auto;
     padding: 25px;
     font-size: 50px;
-    color: rgb(247, 247, 247); 
+    color: #0707f3; 
     border-radius: 16px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.7);
     align-items: center;
@@ -30,13 +30,13 @@ html, body {
 }
 
 .columna1 {
-    flex: 1.5;
+    flex: 1.6;
     min-width: 800px; 
     text-align: center;
 }
 
 .columna2 {
-    flex: 0.5;
+    flex: 0.4;
     min-width:200px;
     text-align: center;
 }
@@ -49,9 +49,13 @@ html, body {
     box-shadow: 0 8px 20px rgba(0,0,0,0.7);
 }
 
+a {
+    text-decoration: none;
+}
+
 .button {
     display: block;
-    width: 200px;
+    width: 300px;
     margin: 15px auto;
     padding: 12px;
     font-size: 18px;
@@ -62,12 +66,16 @@ html, body {
     color: #034de2;
     font-weight: bold;
     box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    text-decoration: none;
+
 
 }
 
 .button:hover {
     background-color: #ffcb05;
     transform: scale(1.05);
+    text-decoration: none;
+
 }
 
 
@@ -81,6 +89,8 @@ html, body {
     background-color: #cfbe77;
     color: #00060e;
     background: rgb(184, 204, 255);
+    text-decoration: none;
+
 }
 
 
@@ -96,11 +106,31 @@ html, body {
     background-color: #ffcb05;
     color: #034de2;
     font-weight: bold;
-        box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    text-decoration: none;
 
 }
 
 .button2:hover {
     background-color: #ffc107;
     transform: scale(1.05);
+    text-decoration: none;
+
 }
+
+footer {
+    background-color: #0707f3;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+footer a {
+    color: rgb(184, 204, 255);
+    font-weight: 500;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
