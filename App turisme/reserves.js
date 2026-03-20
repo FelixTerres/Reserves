@@ -21,6 +21,13 @@ let listaH = document.getElementById("R")
 let listaL = document.getElementById("L")
 let listaA = document.getElementById("C")
 
+/*
+let borrar = document.createElement("button");
+        borrar.classList += "button"
+        borrar.innerHTML = "BORRAR RESERVA"
+*/
+
+
 function clearListH() {
     listaH.innerHTML = ""
 }
@@ -147,7 +154,7 @@ function addElementL(e,dni){
         data.innerHTML = "Data de reserva: " + e[1].data
 
         let telefon = document.createElement("h3")
-        telefon.innerHTML = "Nº de telèfon: " + e[1].habitacions
+        telefon.innerHTML = "Nº de telèfon: " + e[1].telefon
 
         let persones = document.createElement("h3")
         persones.innerHTML = "Nº de persones: " + e[1].persones

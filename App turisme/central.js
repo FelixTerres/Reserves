@@ -1,6 +1,12 @@
 import {initializeApp} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"
 import {getDatabase, ref, push, onValue, remove} from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js"
 
+const modal = document.getElementById("welcome-modal");
+const closeModalBtn = document.getElementById("close-modal");
+
+closeModalBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
 
 const appSettings = {
     databaseURL: "https://turisme-menorca-hf-default-rtdb.europe-west1.firebasedatabase.app/"

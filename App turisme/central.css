@@ -134,3 +134,54 @@ footer a:hover {
     text-decoration: underline;
 }
 
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    animation: fadeIn 0.5s ease;
+}
+
+.modal {
+    background: linear-gradient(135deg, #fff9e9, rgb(184, 204, 255));
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 320px;
+    text-align: center;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    animation: slideUp 0.5s ease;
+}
+
+.modal h2 {
+    margin-top: 0;
+    color: #0707f3;
+    font-size: 26px;
+}
+
+.modal p {
+    font-size: 18px;
+    color: #361c03;
+    line-height: 1.4;
+}
+
+.modal button {
+    margin-top: 20px;
+    width: 100%;
+    display: block;
+    width: 300px;
+    margin: 15px auto;
+    padding: 12px;
+    font-size: 18px;
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffcb05;
+    color: #034de2;
+    font-weight: bold;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    text-decoration: none;
+}
+
