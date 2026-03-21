@@ -185,3 +185,17 @@ footer a:hover {
     text-decoration: none;
 }
 
+.icono {
+    position: absolute;
+    bottom: -550px;
+    left: 10px;
+    width: 90px;
+    height: auto;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.icono:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}

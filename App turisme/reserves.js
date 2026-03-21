@@ -21,11 +21,6 @@ let listaH = document.getElementById("R")
 let listaL = document.getElementById("L")
 let listaA = document.getElementById("C")
 
-/*
-let borrar = document.createElement("button");
-        borrar.classList += "button"
-        borrar.innerHTML = "BORRAR RESERVA"
-*/
 
 
 function clearListH() {
@@ -49,7 +44,7 @@ cercar.addEventListener("click", function () {
 
     resultsDNIHotel(con.value);
     resultsDNIRest(con.value);
-    resultsDNIActv(con.value);
+    resultsDNIActv(con.value);  
 })
 
 
@@ -100,6 +95,16 @@ function addElementH(e,dni){
         altres.innerHTML = "Altra informació a tenir en compte: " + e[1].altres
 
 
+        let borrar = document.createElement("button");
+        borrar.classList += "button"
+        borrar.innerHTML = "BORRAR RESERVA"
+
+        borrar.addEventListener("click", function(){
+            let localització = ref(database, "reservaHotel/" + e[0])
+            remove(localització)
+            contH.remove()
+        })
+
 
         contH.append(titol);
         contH.append(imatge);
@@ -114,6 +119,8 @@ function addElementH(e,dni){
         contH.append(persones);
         contH.append(pensio);
         contH.append(altres);
+
+        contH.append(borrar);
 
         listaH.append(contH)
 
@@ -163,6 +170,16 @@ function addElementL(e,dni){
         altres.innerHTML = "Altra informació a tenir en compte: " + e[1].altres
 
 
+        let borrar = document.createElement("button");
+        borrar.classList += "button"
+        borrar.innerHTML = "BORRAR RESERVA"
+
+        borrar.addEventListener("click", function(){
+            let localització = ref(database, "reservaRestaurant/" + e[0])
+            remove(localització)
+            contL.remove()
+        })
+
 
         contL.append(titol);
         contL.append(imatge);
@@ -175,6 +192,8 @@ function addElementL(e,dni){
         contL.append(telefon);
         contL.append(persones);
         contL.append(altres);
+
+        contL.append(borrar);
 
         listaL.append(contL)
 
@@ -220,6 +239,16 @@ function addElementA(e,dni){
         altres.innerHTML = "Altra informació a tenir en compte: " + e[1].altres
 
 
+        let borrar = document.createElement("button");
+        borrar.classList += "button"
+        borrar.innerHTML = "BORRAR RESERVA"
+
+        borrar.addEventListener("click", function(){
+            let localització = ref(database, "reservaActivitat/" + e[0])
+            remove(localització)
+            contA.remove()
+        })
+
 
         contA.append(titol);
         contA.append(imatge);
@@ -231,6 +260,8 @@ function addElementA(e,dni){
         contA.append(dataA);
         contA.append(persones);
         contA.append(altres);
+
+        contA.append(borrar);
 
         listaA.append(contA)
 
